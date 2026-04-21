@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$Color1: #075E54;
+$Color2: #ECE5DD;
+$Color3: #FFFFFF;
+$Color4: #000000;
+$Color5: #25D366;
+$Color6: #D9FDD3;
+
+// ############### Fonts
+.font1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.font2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.font3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.font4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.font5 {
+    font-size: 16px;
+    line-height: 20px;  
+}
+
+.font6 {
+    font-size: 14px;
+    line-height: 18px;  
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: $Color3;
+}
+
+// ##################### Main
+main {
+    background-color: $Color2;
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.no-disp {
+    display: none;
+}
+
+header {
+    width: 100%;
+    background-color: $Color1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 18px;
+    .web-brand {
+        display: flex;
+        align-items: center;
+        .logo {
+            margin-right: 40px;
+        }
+        p {
+            margin-right: 16px;
+        }
+        .verification {
+            width: 29.6px;
+            height: 29px;
+        }
+    }
+    .shoping-button {
+        svg {
+            width: 48px;
+            height: 48px;
+            color: $Color3;
+        }
+    }
+
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    margin: 48px 0;
+    background-color: $Color3;
+    border-radius: 16px;
+    height: 60px;
+    width: 45vw;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+        width: 24px;
+        height: 24px;
+        margin-left: 32px;
+        color: #ADAAA8;
+    }
+    input {
+        border: none;
+        height: 30px;
+        width: 85%;
+        outline: none;
+    }
+}
+
+.sell-bar {
+    width: 45vw;
+    min-width: 400px;
+    display: flex;
+
+}
+
+.list-brand {
+    width: 100%;
+}
+
+// ########### Brand Card
+.brand-card {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    .brand-cTittle {
+        transition: 0.3s all;
+        width: 100%;
+        padding: 8px 16px;
+        border-radius: 8px;
+        background-color: $Color1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        svg {
+            height: 24px;
+            width: 24px;
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.brand-card .bctOnn {
+    background-color: $Color6;
+    transition: 0.3s all;
+    
+    p {
+        color: $Color1;
+    }
+    svg {
+        transform: rotate(90deg);
+        path {fill: $Color1;}
+    }
+    
+}
+
+.product-list-off {
+    overflow: hidden;
+    height: 0;
+    transition: 0.3s all;
+}
+
+.product-list-on {
+    padding: 4px 0;
+    transition: 0.3s all;
+}
+
+// ########### Product Card
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: $Color4;
+    background-color: $Color3;
+    margin-bottom: 4px;
+    border: 1px solid #88818A;
+    .prodruct-cheader {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .prodruct-cPrices {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .pp-buttons {
+            display: flex;
+            gap: 4px;
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 32px;
+                width: 32px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+// ########## Shopping Cart
+.shopping-cart {
+    position: absolute;
+    padding: 24px;
+    margin-left: 48vw;
+    background-color: $Color3;
+    border-radius: 8px;
+    button {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 8px;
+        outline: none;
+        border: none;
+        p {
+            color: $Color4;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        svg {
+            width: 36px;
+            height: 36px;
+        }
+    }
+    .sc-button {
+        background-color: $Color1;
+        svg {
+            path {fill: $Color3;}
+        }
+        p {color: $Color3;}
+    }
+    .sc-button svg {
+            path {fill: $Color3;}
+    }
+    
+}
+
+.sc-costList {
+    padding: 16px 0;
+    color: $Color4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sc-product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+        .scp-amount {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;   
+        }
+    }
+    .sc-total {
+        margin-top: 18px;
+    }
+}
+
+// ########## Form
+// .formularioAdress {
+//     flex-direction: column;
+
+//     button {
+//         align-self: center;
+//         display: flex;
+//         gap: 16px;
+//         font-size: 36px;
+//         line-height: 44px;
+//         margin-top: 30px;
+//         background-color: $Color5;
+//         color: $Color4;  
+//         padding: 4px 8px;      
+//         border-radius: 8px;
+//         outline: none;
+//         border: none;
+//         align-items: center;
+//         width: fit-content;
+//         svg {
+//             width: 36px;
+//             height: 36px;
+//         }
+//     }
+// }
+
+// .formTittle {
+//     font-size: 32px;
+//     line-height: 40px;
+//     margin: 46px 0 27px 0;
+//     font-weight: 500;
+//     color: $Color4;
+// }
+
+// .formGroup {
+//     display: flex;
+//     flex-direction: column;
+//     color: $Color4;
+//     label {
+//         font-size: 24px;
+//         line-height: 30px;
+//         margin-bottom: 4px;
+//         font-weight: 500;
+//     }
+//     input {
+//         height: 38px;
+//         background-color: $Color3;
+//         border-radius: 8px;
+//         outline: none;
+//         margin-bottom: 8px;
+//         border: none;
+//         padding: 8px 16px;
+//     }
+// }
+
+// .formGroup2 {
+//     display: flex;
+//     justify-content: space-between;
+//     .formGroup {
+//         width: 45%;
+//     }
+// }
+
+
+@media only screen and (min-width: 200px) and (max-width: 780px) {
+// ############### Fonts
+.font1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.font2, .font3 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.font4 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.font5 {
+    font-size: 12px;
+    line-height: 16px;  
+}
+
+
+// ############## Main 
+.search-bar, .sell-bar {
+    min-width: 370px;
+    width: 70vw;
+}
+// ############### Shoping Cart
+.shopping-cart {
+    position:fixed;
+    padding: 12px;
+    margin: 0;
+    background-color: $Color3;
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    button p{
+        font-size: 24px;
+        font-size: 28px;
+    }
+}
+
+.sc-costList {
+ width: 60%;
+.sc-productList, .sc-product {width: 100%;}
+}
+
+}

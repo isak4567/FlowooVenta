@@ -38,6 +38,13 @@
   line-height: 18px;
 }
 
+.font7 {
+  font-size: 32px;
+  line-height: 38px;
+  color: #000000;
+  margin-top: 48px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
@@ -64,6 +71,8 @@ header {
 header .web-brand {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  width: 70%;
 }
 header .web-brand .logo {
   margin-right: 40px;
@@ -88,7 +97,7 @@ header .shoping-button svg {
 }
 
 .search-bar {
-  margin: 48px 0;
+  margin: 24px 0 48px 0;
   background-color: #FFFFFF;
   border-radius: 16px;
   height: 60px;
@@ -277,6 +286,24 @@ header .shoping-button svg {
   .font5 {
     font-size: 12px;
     line-height: 16px;
+  }
+  .font7 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 48px;
+  }
+  header {
+    padding: 12px 18px;
+  }
+  header .web-brand .verification {
+    width: 15.6px;
+    height: 16px;
+  }
+  header .web-brand .logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 24px;
   }
   .search-bar, .sell-bar {
     min-width: 370px;

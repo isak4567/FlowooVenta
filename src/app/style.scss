@@ -47,6 +47,13 @@ $Color6: #D9FDD3;
     line-height: 18px;  
 }
 
+.font7 {
+    font-size: 32px;
+    line-height: 38px;  
+    color: $Color4;
+    margin-top: 48px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: $Color3;
@@ -74,6 +81,8 @@ header {
     .web-brand {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        width: 70%;
         .logo {
             margin-right: 40px;
         }
@@ -92,7 +101,6 @@ header {
             color: $Color3;
         }
     }
-
 }
 
 
@@ -103,7 +111,7 @@ header {
 }
 
 .search-bar {
-    margin: 48px 0;
+    margin: 24px 0 48px 0;
     background-color: $Color3;
     border-radius: 16px;
     height: 60px;
@@ -365,8 +373,28 @@ header {
     line-height: 16px;  
 }
 
-
+.font7 {
+    font-size: 20px;
+    line-height: 24px;  
+    color: $Color4;
+    margin-top: 48px;
+}
 // ############## Main 
+header {
+    padding: 12px 18px;
+    .web-brand {
+        .verification {
+        width: 15.6px;
+        height: 16px;
+        }
+        .logo {
+        width: 28px;
+        height: 28px;
+        margin-right: 24px;
+        }
+    }
+}
+
 .search-bar, .sell-bar {
     min-width: 370px;
     width: 70vw;

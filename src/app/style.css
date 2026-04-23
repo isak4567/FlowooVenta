@@ -270,6 +270,10 @@ header .shoping-button svg {
   margin-top: 18px;
 }
 
+.sc-productList {
+  width: 100%;
+}
+
 @media only screen and (min-width: 200px) and (max-width: 780px) {
   .font1 {
     font-size: 24px;

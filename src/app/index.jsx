@@ -1,5 +1,5 @@
 import Main from '../pages';
-import {RouterProvider, HashRouter } from 'react-router-dom';
+import {RouterProvider, HashRouter, Route, Routes } from 'react-router-dom';
 import './style.css';
 import { OrderProvider } from '../context';
 
@@ -10,9 +10,9 @@ function App() {
 
   return (
     <OrderProvider>
-      <HashRouter>
-        <Route path="/FlowooVenta/" element={<Main />} />
-      </HashRouter>
+        <Routes>
+          <Route path="/FlowooVenta" element={<Main />} />
+        </Routes>
     </OrderProvider>
   )
 }

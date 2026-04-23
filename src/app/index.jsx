@@ -1,12 +1,7 @@
 import Main from '../pages';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {RouterProvider, HashRouter } from 'react-router-dom';
 import './style.css';
 import { OrderProvider } from '../context';
-
-
-const router = createBrowserRouter([
-  {path: "/", element: <Main />},
-]);
 
 
 
@@ -15,7 +10,9 @@ function App() {
 
   return (
     <OrderProvider>
-      <RouterProvider router={router}/>
+      <HashRouter>
+        <Route path="/FlowooVenta/" element={<Main />} />
+      </HashRouter>
     </OrderProvider>
   )
 }

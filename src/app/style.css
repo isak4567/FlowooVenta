@@ -316,6 +316,7 @@ header .shoping-button svg {
   .shopping-cart {
     position: fixed;
     padding: 12px;
+    padding-top: 0;
     margin: 0;
     background-color: #FFFFFF;
     border-radius: 0;
@@ -336,5 +337,30 @@ header .shoping-button svg {
   }
   .sc-costList .sc-productList, .sc-costList .sc-product {
     width: 100%;
+  }
+  .sc-pl-movil {
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px;
+    padding: 4px;
+  }
+  .sc-Full {
+    background-color: rgba(0, 0, 0, 0.5333333333);
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  .sc-Full .sc-costList {
+    background-color: #FFFFFF;
+    padding: 16px;
+    padding-bottom: 72px;
+    border-radius: 8px;
+  }
+  .sc-Full .sc-button {
+    margin-top: -64px;
   }
 }/*# sourceMappingURL=style.css.map */

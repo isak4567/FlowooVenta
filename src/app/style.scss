@@ -404,6 +404,7 @@ header {
 .shopping-cart {
     position:fixed;
     padding: 12px;
+    padding-top: 0;
     margin: 0;
     background-color: $Color3;
     border-radius: 0;
@@ -424,5 +425,35 @@ header {
  width: 60%;
 .sc-productList, .sc-product {width: 100%;}
 }
+
+.sc-pl-movil {
+    color: $Color4;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 8px;
+    padding: 4px;
+}
+
+// sc-Full
+.sc-Full {
+    background-color: #00000088;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    .sc-costList {
+        background-color: $Color3;
+        padding: 16px;
+        padding-bottom: 72px;
+        border-radius: 8px;
+
+    }
+    .sc-button {
+        margin-top: -64px;
+    }
+}
+
 
 }

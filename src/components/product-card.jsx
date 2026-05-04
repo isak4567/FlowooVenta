@@ -5,7 +5,7 @@ import { orderContext } from "../context";
 function ProductCard({indexPro, brandNumb}) {
 
   const [amount, setAmount] = useState(0);
-  const {orderList, setOrderList} = useContext(orderContext)
+  const {orderList, setOrderList, amountProd, setAmountProd} = useContext(orderContext);
 
   const actualizarPorIndex = (index, amount) => {
     setOrderList(prevItems =>
@@ -29,6 +29,7 @@ function ProductCard({indexPro, brandNumb}) {
 
     if (method == 1 && amount < 9) {
       setAmount(amount+1);
+      setAmountProd(amountProd+1);
 
       if (itemPlace >= 0) {
         actualizarPorIndex(itemPlace, amount+1);
@@ -39,6 +40,7 @@ function ProductCard({indexPro, brandNumb}) {
     }
     if (method == 0 && amount > 0) {
       setAmount(amount-1);
+      setAmountProd(amountProd-1);
 
       if (amount-1 > 0) {
         actualizarPorIndex(itemPlace, amount-1);
